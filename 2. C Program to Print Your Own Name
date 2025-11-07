@@ -1,0 +1,6 @@
+#include <stdio.h>
+
+int main() {
+    printf("My name is [Kanita Nazneen]");
+    return 0;
+}
