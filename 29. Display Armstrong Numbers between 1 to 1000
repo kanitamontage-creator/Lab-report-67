@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main() {
+    int n, temp, rem, result;
+    printf("Armstrong numbers between 1 and 1000 are:\n");
+
+    for (n = 1; n <= 1000; n++) {
+        temp = n;
+        result = 0;
+        while (temp != 0) {
+            rem = temp % 10;
+            result += rem * rem * rem;
+            temp /= 10;
+        }
+        if (result == n)
+            printf("%d ", n);
+    }
+
+    return 0;
+}
